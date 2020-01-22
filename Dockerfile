@@ -12,7 +12,7 @@ RUN mkdir -p /usr/local/src/repositories
 
 WORKDIR /usr/local/src/repositories
 ARG source=https://github.com/HotOnMik/Docker_HotOnMik.git
-ARG release=master
+ARG release=HotOnMik/freeradius
 RUN git clone -b ${release} ${source}
 
 ENV repo_dir /usr/local/src/repositories/HotOnMik
